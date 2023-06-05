@@ -7,10 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
-    <!-- An example of how you can redefine a color -->
     <style>
         .text-primary {
-            color: var(--bs-indigo) !important;
+            /* An example of how you can redefine a color class */
+            color: var(--bs-pink) !important;
+        }
+
+        b {
+            color: var(--bs-purple)
         }
     </style>
 
@@ -18,18 +22,16 @@
 </head>
 
 <body class="bg-dark">
-    <main class="container mt-4 bg-primary-subtle"> <!-- style="background-color: var(--bs-primary-bg-subtle);" -->
+    <main class="container mt-4 bg-primary-subtle text-white">
         <h1 class="text-primary">The Robot Roundup Vintage Camper Rally Winds Down</h1>
-        <h5 class="bg-success text-white">Over 280 Caravans and Campers Gather and Glamp from All Corners of the Country
-        </h5>
+        <h5 class="bg-success">Over 280 Caravans and Campers Gather and Glamp from All Corners of the Country</h5>
 
         <div class="p-3 text-primary-emphasis bg-warning-subtle border border-primary-subtle rounded-3">
-            <b style="color: var(--bs-purple)">Q:</b> Why did the robot go camping?<br>
-            <b style="color: var(--bs-purple)">A:</b>He needed to recharge his batteries.
+            <b>Q:</b> Why did the robot go camping?<br>
+            <b>A:</b> He needed to recharge his batteries.
         </div>
 
         &raquo; <a href="#" class="link-warning">Read More</a>
-
     </main>
 </body>
 
