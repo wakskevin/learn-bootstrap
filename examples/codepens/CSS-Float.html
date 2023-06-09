@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float</title>
+    <style>
+        html {
+            box-sizing: border-box;
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+
+        .wrapper {
+            font-size: 20px;
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        header,
+        footer {
+            background: #ccc;
+            height: 50px;
+        }
+
+        aside {
+            background: lightblue;
+            height: 250px;
+            width: 200px;
+            float: left;
+        }
+
+        article {
+            background: lightgreen;
+            height: 250px;
+            width: 600px;
+            float: left;
+            padding: 20px;
+        }
+
+        footer {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>Header</header>
+        <aside>Sidebar</aside>
+        <article>Main content</article>
+        <footer>Footer</footer>
+    </div>
+</body>
+
+</html>
