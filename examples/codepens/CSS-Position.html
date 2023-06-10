@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+    <style>
+        .wrapper {
+            width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid black;
+            position: relative;
+        }
+
+        .parent {
+            border: 1px solid red;
+            position: relative;
+        }
+
+        .box {
+            width: 60px;
+            height: 50px;
+            padding: 10px;
+        }
+
+        .relative {
+            background: lightblue;
+            position: relative;
+            top: 10px;
+            right: 30px;
+        }
+
+        .absolute {
+            background: pink;
+            position: absolute;
+            right: 25%;
+            bottom: 5%;
+        }
+
+        .fixed {
+            background: lightgreen;
+            position: fixed;
+            top: 0;
+            right: 0;
+        }
+
+        .sticky {
+            background: lightgray;
+            position: sticky;
+            top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="parent">
+            <div class="box relative">relative</div>
+            <div class="box absolute">absolute</div>
+            <div class="box fixed">fixed</div>
+        </div>
+
+        <div class="box sticky">sticky</div>
+        <p>Just a bunch of text for demonstration purposes to make the page scroll. Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Modi praesentium reiciendis veniam, voluptas? Just a bunch of text for
+            demonstration purposes. Quae tempore voluptate incidunt enim quisquam, eius ex, amet deserunt obcaecati
+            eaque rem. Just a bunch of text for demonstration purposes. Molestias aliquid, rem quasi.Lorem ipsum dolor
+            sit amet, consectetur adipisicing elit. Just a bunch of text for demonstration purposes. Debitis deleniti
+            ex, repellat consectetur, odit harum quis exercitationem vitae corrupti facilis, iste. Just a bunch of text
+            for demonstration purposes. Enim error ab architecto ducimus inventore sequi voluptas id?</p>
+        <p>Just a bunch of text for demonstration purposes. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Modi praesentium reiciendis veniam, voluptas? Just a bunch of text for demonstration purposes. Quae tempore
+            voluptate incidunt enim quisquam, eius ex, amet deserunt obcaecati eaque rem. Just a bunch of text for
+            demonstration purposes. Molestias aliquid, rem quasi.Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Just a bunch of text for demonstration purposes. Debitis deleniti ex, repellat consectetur, odit harum
+            quis exercitationem vitae corrupti facilis, iste. Just a bunch of text for demonstration purposes. Enim
+            error ab architecto ducimus inventore sequi voluptas id?</p>
+        <p>Just a bunch of text for demonstration purposes. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Modi praesentium reiciendis veniam, voluptas? Just a bunch of text for demonstration purposes. Quae tempore
+            voluptate incidunt enim quisquam, eius ex, amet deserunt obcaecati eaque rem. Just a bunch of text for
+            demonstration purposes. Molestias aliquid, rem quasi.Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Just a bunch of text for demonstration purposes. Debitis deleniti ex, repellat consectetur, odit harum
+            quis exercitationem vitae corrupti facilis, iste. Just a bunch of text for demonstration purposes. Enim
+            error ab architecto ducimus inventore sequi voluptas id?</p>
+        <p>Just a bunch of text for demonstration purposes. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Modi praesentium reiciendis veniam, voluptas? Just a bunch of text for demonstration purposes. Quae tempore
+            voluptate incidunt enim quisquam, eius ex, amet deserunt obcaecati eaque rem. Just a bunch of text for
+            demonstration purposes. Molestias aliquid, rem quasi.Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Just a bunch of text for demonstration purposes. Debitis deleniti ex, repellat consectetur, odit harum
+            quis exercitationem vitae corrupti facilis, iste. Just a bunch of text for demonstration purposes. Enim
+            error ab architecto ducimus inventore sequi voluptas id?</p>
+    </div>
+
+    <div class="wrapper">
+        <p>Second wrapper.</p>
+        <p>Just a bunch of text for demonstration purposes to make the page scroll. Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Modi praesentium reiciendis veniam, voluptas? Just a bunch of text for
+            demonstration purposes. Quae tempore voluptate incidunt enim quisquam, eius ex, amet deserunt obcaecati
+            eaque rem. Just a bunch of text for demonstration purposes. Molestias aliquid, rem quasi.Lorem ipsum dolor
+            sit amet, consectetur adipisicing elit. Just a bunch of text for demonstration purposes. Debitis deleniti
+            ex, repellat consectetur, odit harum quis exercitationem vitae corrupti facilis, iste. Just a bunch of text
+            for demonstration purposes. Enim error ab architecto ducimus inventore sequi voluptas id?</p>
+        <p>Just a bunch of text for demonstration purposes. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Modi praesentium reiciendis veniam, voluptas? Just a bunch of text for demonstration purposes. Quae tempore
+            voluptate incidunt enim quisquam, eius ex, amet deserunt obcaecati eaque rem. Just a bunch of text for
+            demonstration purposes. Molestias aliquid, rem quasi.Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Just a bunch of text for demonstration purposes. Debitis deleniti ex, repellat consectetur, odit harum
+            quis exercitationem vitae corrupti facilis, iste. Just a bunch of text for demonstration purposes. Enim
+            error ab architecto ducimus inventore sequi voluptas id?</p>
+        <p>Just a bunch of text for demonstration purposes. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Modi praesentium reiciendis veniam, voluptas? Just a bunch of text for demonstration purposes. Quae tempore
+            voluptate incidunt enim quisquam, eius ex, amet deserunt obcaecati eaque rem. Just a bunch of text for
+            demonstration purposes. Molestias aliquid, rem quasi.Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Just a bunch of text for demonstration purposes. Debitis deleniti ex, repellat consectetur, odit harum
+            quis exercitationem vitae corrupti facilis, iste. Just a bunch of text for demonstration purposes. Enim
+            error ab architecto ducimus inventore sequi voluptas id?</p>
+        <p>Just a bunch of text for demonstration purposes. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Modi praesentium reiciendis veniam, voluptas? Just a bunch of text for demonstration purposes. Quae tempore
+            voluptate incidunt enim quisquam, eius ex, amet deserunt obcaecati eaque rem. Just a bunch of text for
+            demonstration purposes. Molestias aliquid, rem quasi.Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Just a bunch of text for demonstration purposes. Debitis deleniti ex, repellat consectetur, odit harum
+            quis exercitationem vitae corrupti facilis, iste. Just a bunch of text for demonstration purposes. Enim
+            error ab architecto ducimus inventore sequi voluptas id?</p>
+    </div>
+</body>
+
+</html>
