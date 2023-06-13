@@ -25,7 +25,9 @@
         <hr>
 
         <h4 class="text-secondary">Absolute</h4>
+
         <!-- Note the use of postion-relative in this container div-->
+
         <div class="d-grid gap-2 bg-dark position-relative" style="padding:10px;">
             <div class="bg-secondary text-white p-2" style="height:100px;">Rex</div>
             <div class="position-absolute top-0 start-0 bg-danger text-white p-2" style="height:100px;">Dolores</div>
@@ -39,7 +41,7 @@
         <h4 class="text-secondary">Fixed</h4>
         <div class="d-grid gap-2 bg-dark" style="padding:10px;">
             <div class="bg-secondary text-white p-2" style="height:100px;">Rex</div>
-            <div class="position-fixed bottom-0 end-0 bg-danger text-white p-2" style="height:100px;">Dolores</div>
+            <div class="position-fixed bottom-50 end-0 bg-danger text-white p-2" style="height:100px;">Dolores</div>
             <div class="bg-secondary text-white p-2" style="height:100px;">Bubbles</div>
             <div class="bg-secondary text-white p-2" style="height:100px;">Fred</div>
             <div class="bg-secondary text-white p-2" style="height:100px;">Rivet</div>
@@ -67,6 +69,21 @@
             <div class="bg-secondary text-white p-2" style="height:100px;">Rivet</div>
         </div>
 
+        <hr>
+
+        <h4 class="text-secondary">Using translate-middle to center elements in their corners</h4>
+        <br>
+        <br>
+
+        <div class="position-relative bg-dark" style="height: 100px;">
+            <div class="position-absolute top-0 start-0 translate-middle bg-secondary text-white p-2">Rex</div>
+            <div class="position-absolute top-0 start-100 translate-middle bg-secondary text-white p-2">Dolores</div>
+            <div class="position-absolute top-100 start-0 translate-middle bg-secondary text-white p-2">Bubbles</div>
+            <div class="position-absolute top-100 start-100 translate-middle bg-secondary text-white p-2">Fred</div>
+        </div>
+
+        <br>
+        <br>
     </main>
 </body>
 

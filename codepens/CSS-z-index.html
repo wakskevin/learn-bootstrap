@@ -19,37 +19,40 @@
         }
 
         .block1 {
-            display: none;
+            /* display: none; */
             background: pink;
+            /* position: relative; */
+            /* z-index: 100; */
         }
 
         .block2 {
-            display: none;
+            /* display: none; */
             background: red;
             margin: -60px 0 0 20px;
         }
 
         .float {
-            display: none;
+            /* display: none; */
             background: lightblue;
             float: left;
             margin: -150px 0 0 100px;
         }
 
         .inline {
-            display: none;
+            /* display: none; */
             background: blue;
             color: white;
             padding: 10px 40px 10px 10px;
         }
 
         .position {
-            display: none;
+            /* display: none; */
             background: orange;
             position: relative;
             left: 180px;
             top: -165px;
             height: 110px;
+            /* z-index: 200; */
         }
 
         /* shared div styles */
@@ -72,3 +75,11 @@
 </body>
 
 </html>
+
+<!--
+    1) The order in which block elements are rendered determines which one is at a higher stack on the layour.
+
+    2) Though floats, inline elements and then elements with position property will always stack at the top of the layout in that order.
+
+    3) Z-index applies on elements that have the position property applied to them.
+-->
