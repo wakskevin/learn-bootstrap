@@ -1,0 +1,46 @@
+<!--
+    Example from the CSS Essential Training course on LinkedIn Learning (https://www.linkedin.com/learning/instructors/christina-truong?u=2125562) and Lynda.com (https://www.lynda.com/Christina-Truong/7842227-1.html) 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to Flexbox</title>
+
+    <style>
+        .flex-container {
+            background: lightsteelblue;
+            margin-bottom: 10px;
+              /* width: 500px; */
+              /* display: flex; */
+            /*   flex-wrap: wrap; */
+        }
+
+        .flex-item {
+            box-sizing: border-box;
+            border: 1px solid midnightblue;
+            padding: 10px;
+            /*   flex: 1 1 100px; */
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4
+            <p>Short block of text.</p>
+        </div>
+        <div class="flex-item">5
+            <p>Longer block of text - Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+</body>
+
+</html>
