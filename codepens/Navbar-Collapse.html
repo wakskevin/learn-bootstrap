@@ -1,0 +1,88 @@
+<!-- https://codepen.io/planetoftheweb/pen/RwKBYdO?editors=1000 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap 5 - Navbar Collapse</title>
+    <link rel="stylesheet" href="../assets/dist/css/bootstrap.min.css">
+    <script src="../assets/dist/js/bootstrap.bundle.min.js" defer></script>
+</head>
+
+<body>
+    <h1 class="container mt-4">Navbar Collapse</h1>
+
+    <h4 class="container text-secondary">Navbar Collapse, Brand Left</h4>
+
+    <nav class="navbar navbar-expand-xl bg-secondary navbar-dark">
+        <div class="container">
+            <a href="#" class="navbar-brand">Binaryville</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-item nav-link active" aria-current="page" href="#">Bubbles</a>
+                    <a class="nav-item nav-link" href="#">Cosmo</a>
+                    <a class="nav-item nav-link" href="#">Dolores</a>
+                    <a class="nav-item nav-link" href="#">Fred</a>
+                    <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Levi</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <hr>
+
+    <h4 class="container text-secondary">Navbar Collapse, Brand Right</h4>
+
+    <nav class="navbar navbar-expand-xl bg-secondary navbar-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="#" class="navbar-brand">Binaryville</a>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-item nav-link active" aria-current="page" href="#">Bubbles</a>
+                    <a class="nav-item nav-link" href="#">Cosmo</a>
+                    <a class="nav-item nav-link" href="#">Dolores</a>
+                    <a class="nav-item nav-link" href="#">Fred</a>
+                    <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Levi</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <hr>
+
+    <h4 class="container text-secondary">Navbar Collapse, Scrolling</h4>
+
+    <nav class="navbar navbar-expand-xl bg-secondary navbar-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbar_robot_toggler" aria-controls="navbar_robot_toggler" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="#" class="navbar-brand">Binaryville</a>
+            <div class="collapse navbar-collapse" id="navbar_robot_toggler">
+                <div class="navbar-nav navbar-nav-scroll ms-auto" style="--bs-scroll-height: 150px;">
+                    <a class="nav-item nav-link active" aria-current="page" href="#">Bubbles</a>
+                    <a class="nav-item nav-link" href="#">Cosmo</a>
+                    <a class="nav-item nav-link" href="#">Dolores</a>
+                    <a class="nav-item nav-link" href="#">Fred</a>
+                    <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Levi</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <hr>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!-- https://codepen.io/planetoftheweb/pen/JjEBLxE?editors=1000 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 -Button Groups</title>
+    <link rel="stylesheet" href="../assets/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="mt-4 mb-2">Button Groups</h1>
+
+        <h4 class="text-secondary">btn-group</h4>
+        <div class="btn-group" role="group" aria-label="Robot Buttons">
+            <button type="button" class="btn btn-outline-success">Dolores</button>
+            <button type="button" class="btn btn-outline-success active">Bubbles</button>
+            <button type="button" class="btn btn-outline-success">Cosmo</button>
+        </div>
+
+        <hr>
+
+        <h4 class="text-secondary">btn-group-vertical</h4>
+        <div class="btn-group-vertical" role="group" aria-label="Robot Buttons">
+            <button type="button" class="btn btn-primary">Dolores</button>
+            <button type="button" class="btn btn-primary active">Bubbles</button>
+            <button type="button" class="btn btn-primary">Cosmo</button>
+        </div>
+
+        <hr>
+
+        <h1 class="mt-4 mb-2">Variations</h1>
+
+        <h4 class="text-secondary">btn-group-sm</h4>
+        <div class="btn-group btn-group-sm" role="group" aria-label="Robot Buttons">
+            <button type="button" class="btn btn-warning">Dolores</button>
+            <button type="button" class="btn btn-warning active">Bubbles</button>
+            <button type="button" class="btn btn-warning">Cosmo</button>
+        </div>
+
+        <hr>
+
+        <h4 class="text-secondary">btn-group-lg</h4>
+        <div class="btn-group-vertical btn-group-lg" role="group" aria-label="Robot Buttons">
+            <button type="button" class="btn btn-outline-danger">Dolores</button>
+            <button type="button" class="btn btn-outline-danger active">Bubbles</button>
+            <button type="button" class="btn btn-outline-danger">Cosmo</button>
+        </div>
+
+        <hr>
+
+        <h1 class="mt-4 mb-2">btn-check</h1>
+
+        <h4 class="text-secondary">with checkboxes</h4>
+        <div class="btn-group" role="group" aria-label="Robot toggle group">
+            <input type="checkbox" class="btn-check" id="dolores_ck" autocomplete="off">
+            <label class="btn btn-outline-info" for="dolores_ck">Dolores</label>
+
+            <input type="checkbox" class="btn-check" id="bubbles_ck" autocomplete="off" checked>
+            <label class="btn btn-outline-info" for="bubbles_ck">Bubbles</label>
+
+            <input type="checkbox" class="btn-check" id="cosmo_ck" autocomplete="off">
+            <label class="btn btn-outline-info" for="cosmo_ck">Cosmo</label>
+        </div>
+
+        <hr>
+
+        <h4 class="text-secondary">with radio</h4>
+        <div class="btn-group-vertical" role="group" aria-label="Robot toggle group">
+            <input type="radio" class="btn-check" name="choose_robot" id="choice_dolores" autocomplete="off">
+            <label class="btn btn-success" for="choice_dolores">Dolores</label>
+
+            <input type="radio" class="btn-check" name="choose_robot" id="choice_bubbles" autocomplete="off" checked>
+            <label class="btn btn-success" for="choice_bubbles">Bubbles</label>
+
+            <input type="radio" class="btn-check" name="choose_robot" id="choice_cosmo" autocomplete="off">
+            <label class="btn btn-success" for="choice_cosmo">Cosmo</label>
+        </div>
+
+        <hr>
+</body>
+
+</html>

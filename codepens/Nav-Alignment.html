@@ -1,0 +1,76 @@
+<!-- https://codepen.io/planetoftheweb/pen/GRrBBvM?editors=1000 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 - Nav Alignment</title>
+    <link rel="stylesheet" href="../assets/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <h1 class="mt-4 mb-2">Nav Alignment</h1>
+
+    <h4 class="text-secondary">Using nav-fill</h4>
+
+    <ul class="nav nav-pills nav-fill">
+        <li class="nav-item">
+            <a class="nav-link" href="#">Dolores</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Bubbles is from a family of track footed robots</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Cosmo</a>
+        </li>
+    </ul>
+
+    <hr>
+
+    <h4 class="text-secondary">Using nav-justified</h4>
+
+    <ul class="nav nav-pills nav-justified">
+        <li class="nav-item">
+            <a class="nav-link" href="#">Dolores</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Bubbles is from a family of track footed robots</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Cosmo</a>
+        </li>
+    </ul>
+
+    <hr>
+
+
+    <h4 class="text-secondary">Using justify-content</h4>
+
+    <ul class="nav nav-pills justify-content-md-center">
+        <li class="nav-item">
+            <a class="nav-link" href="#">Dolores</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Bubbles</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Cosmo</a>
+        </li>
+    </ul>
+
+    <hr>
+
+    <h4 class="text-secondary">Using flex-column</h4>
+
+    <nav class="nav  nav-pills flex-column flex-md-row">
+        <a class="nav-link" href="#">Dolores</a>
+        <a class="nav-link active" aria-current="page" href="#">Bubbles</a>
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Cosmo</a>
+    </nav>
+
+    <hr>
+</body>
+
+</html>

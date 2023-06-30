@@ -1,0 +1,64 @@
+<!-- https://codepen.io/planetoftheweb/pen/XWpBOvG?editors=1000 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 - Card Images</title>
+    <link rel="stylesheet" href="../assets/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <main class="container mt-4">
+        <h1>Cards</h1>
+
+        <h4 class="container text-secondary">card-img-top</h4>
+        <div class="card" style="width: 450px;">
+            <img class="card-img-top" src="../assets/images/mug-rex.jpg" alt="Rex">
+            <div class="card-body">
+                <h4 class="card-title text-secondary">Rex</h4>
+                <p class="card-text lh-sm">Rex is the Mayor of Binaryville and a well-loved personality in town. He rose
+                    to
+                    robotdom from a microprocessor plant on the south side of town, where many famous and influential
+                    robots
+                    before him were conceived.</p>
+                <a href="#" class="card-link btn btn-secondary mt-auto">more info</a>
+            </div>
+        </div>
+
+        <hr>
+
+        <h4 class="container text-secondary">card-img-bottom</h4>
+        <div class="card" style="width: 450px;">
+            <div class="card-body">
+                <h4 class="card-title text-secondary">Dolores</h4>
+                <p class="card-text lh-sm">Dolores robot is a computational genius who performs calculations for various
+                    Binaryville businesses and organizations. In her spare time, Dolores has been noodling on the
+                    creation
+                    of the perfect web browser that will make all other browsers obsolete. We're rooting for you,
+                    Dolores!
+                </p>
+                <a href="#" class="card-link btn btn-secondary mt-auto">more info</a>
+            </div>
+            <img class="card-img-bottom" src="../assets/images/mug_dolores.jpg" alt="Dolores">
+        </div>
+
+        <hr>
+
+        <h4 class="container text-secondary">card-img-overlay</h4>
+        <div class="card" style="width: 450px;">
+            <img class="card-img" style="filter: brightness(60%);" src="../assets/images/mug_dolores.jpg" alt="Dolores">
+            <div class="card-img-overlay text-white">
+                <h1 class="card-title">Bubbles</h1>
+                <p class="card-text lh-sm">That's Bubble Gum Robot, or "Bubbles" for short.</p>
+                <a href="#" class="card-link btn btn-light mt-auto">more info</a>
+            </div>
+        </div>
+
+        <hr>
+    </main>
+</body>
+
+</html>
