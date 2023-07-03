@@ -1,0 +1,59 @@
+<!-- https://codepen.io/planetoftheweb/pen/gOgBBOZ?editors=1000 -->
+
+<!DOCTYPE html>
+<html lang='en' dir='ltr'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Bootstrap 5 - Dropdown</title>
+
+    <!-- Bootstrap CSS -->
+    <link href='../assets/dist/css/bootstrap.min.css' rel='stylesheet'>
+
+    <!-- Bootstrap JS -->
+    <script src='../assets/dist/js/bootstrap.bundle.min.js' defer></script>
+</head>
+
+<body>
+    <main class='container mt-4'>
+        <h1>Dropdown</h1>
+
+        <h4 class="text-secondary">Dropdown</h4>
+
+        <span class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMicroProcessor"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Button Dropdown
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMicroProcecsor">
+                <li><a class="dropdown-item" href="#">Microcontroller</a></li>
+                <li><a class="dropdown-item" href="#">Embedded Processor</a></li>
+                <li><a class="dropdown-item" href="#">DSP</a></li>
+                <li><a class="dropdown-item" href="#">Media Processor</a></li>
+            </ul>
+        </span>
+
+        <hr>
+
+        <h4 class="text-secondary">Anchor Dropdown</h4>
+
+        <div class="dropdown">
+            <a class="btn btn-info dropdown-toggle" type="button" id="dropdownMicroProcessor" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Anchor Trigger
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMicroProcecsor">
+                <li><a class="dropdown-item" href="#">Microcontroller</a></li>
+                <li><a class="dropdown-item" href="#">Embedded Processor</a></li>
+                <li><a class="dropdown-item" href="#">DSP</a></li>
+                <li><a class="dropdown-item" href="#">Media Processor</a></li>
+            </ul>
+        </div>
+
+        <hr>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!-- https://codepen.io/planetoftheweb/pen/OJWBqog?editors=1010 -->
+
+<!DOCTYPE html>
+<html lang='en' dir='ltr'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Bootstrap 5 - Tooltips</title>
+
+    <!-- Bootstrap CSS -->
+    <link href='../assets/dist/css/bootstrap.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <main class='container mt-4'>
+        <div class="container mt-4">
+            <h1>Tooltips</h1>
+
+            <div class="d-inline-flex flex-column gap-3">
+                <button type="button" class="btn btn-secondary d-inline-block" data-bs-toggle="tooltip"
+                    data-bs-placement="top" title="top">
+                    top
+                </button>
+
+                <button type="button" class="btn btn-secondary d-inline-block" data-bs-toggle="tooltip"
+                    data-bs-placement="right" title="right">
+                    right
+                </button>
+
+                <button type="button" class="btn btn-secondary d-inline-block" data-bs-toggle="tooltip"
+                    data-bs-placement="bottom" title="bottom">
+                    bottom
+                </button>
+
+                <button type="button" class="btn btn-secondary d-inline-block" data-bs-toggle="tooltip"
+                    data-bs-placement="left" title="left">
+                    Tooltip on left
+                </button>
+            </div>
+            <hr>
+        </div>
+    </main>
+    
+    <!-- Bootstrap JS -->
+    <script src='../assets/dist/js/bootstrap.bundle.min.js'></script>
+
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+</body>
+
+</html>

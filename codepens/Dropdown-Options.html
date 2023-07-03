@@ -1,0 +1,95 @@
+<!-- https://codepen.io/planetoftheweb/pen/wvgYYQM?editors=1000 -->
+
+<!DOCTYPE html>
+<html lang='en' dir='ltr'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Bootstrap 5 - Dropdowm Options</title>
+
+    <!-- Bootstrap CSS -->
+    <link href='../assets/dist/css/bootstrap.min.css' rel='stylesheet'>
+
+    <!-- Bootstrap JS -->
+    <script src='../assets/dist/js/bootstrap.bundle.min.js' defer></script>
+</head>
+
+<body>
+    <main class='container mt-4'>
+        <h1>Dropdown Options</h1>
+
+
+        <h4 class="text-secondary">Responsive Alignment</h4>
+
+        <span class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMicroProcessorTrigger"
+                data-bs-toggle="dropdown" aria-expanded="false">Alignment with container on an extremely long
+                menu</button>
+            <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="dropdownMicroProcessorTrigger">
+                <li><a class="dropdown-item" href="#">Microcontroller</a></li>
+                <li><a class="dropdown-item" href="#">Embedded Processor</a></li>
+                <li><a class="dropdown-item" href="#">DSP</a></li>
+                <li><a class="dropdown-item" href="#">Media Processor</a></li>
+            </ul>
+        </span>
+
+        <hr>
+
+        <h4 class="text-secondary">Dropdown End</h4>
+
+        <div class="dropend">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMicroProcessorTrigger"
+                data-bs-toggle="dropdown" aria-expanded="false">Dropdown End</button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMicroProcessorTrigger">
+                <li><a class="dropdown-item" href="#">Microcontroller</a></li>
+                <li><a class="dropdown-item" href="#">Embedded Processor</a></li>
+                <li><a class="dropdown-item" href="#">DSP</a></li>
+                <li><a class="dropdown-item" href="#">Media Processor</a></li>
+            </ul>
+        </div>
+
+        <div class="dropstart mt-4 w-100 d-flex align-items-end">
+            <button class="btn btn-secondary dropdown-toggle ms-auto" type="button" id="dropdownMicroProcessorTrigger"
+                data-bs-toggle="dropdown" aria-expanded="false">Dropdown Start</button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMicroProcessorTrigger">
+                <li><a class="dropdown-item" href="#">Microcontroller</a></li>
+                <li><a class="dropdown-item" href="#">Embedded Processor</a></li>
+                <li><a class="dropdown-item" href="#">DSP</a></li>
+                <li><a class="dropdown-item" href="#">Media Processor</a></li>
+            </ul>
+        </div>
+
+        <div class="dropup mt-4 d-flex align-items-end">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMicroProcessorTrigger"
+                data-bs-toggle="dropdown" aria-expanded="false">Dropdown Up</button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMicroProcessorTrigger">
+                <li><a class="dropdown-item" href="#">Microcontroller</a></li>
+                <li><a class="dropdown-item" href="#">Embedded Processor</a></li>
+                <li><a class="dropdown-item" href="#">DSP</a></li>
+                <li><a class="dropdown-item" href="#">Media Processor</a></li>
+            </ul>
+        </div>
+
+
+        <hr>
+
+        <h4 class="text-secondary">Dark Dropdown</h4>
+
+        <span class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMicroProcessorTrigger"
+                data-bs-toggle="dropdown" aria-expanded="false">Dark Dropdown</button>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMicroProcessorTrigger">
+                <li><a class="dropdown-item" href="#">Microcontroller</a></li>
+                <li><a class="dropdown-item" href="#">Embedded Processor</a></li>
+                <li><a class="dropdown-item" href="#">DSP</a></li>
+                <li><a class="dropdown-item" href="#">Media Processor</a></li>
+            </ul>
+        </span>
+
+        <hr>
+    </main>
+</body>
+
+</html>

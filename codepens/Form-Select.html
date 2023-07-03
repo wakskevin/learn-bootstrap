@@ -1,0 +1,82 @@
+<!-- https://codepen.io/planetoftheweb/pen/XWpyawd?editors=1000 -->
+
+<!DOCTYPE html>
+<html lang='en' dir='ltr'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Bootstrap 5 Form Select</title>
+
+    <!-- Bootstrap CSS -->
+    <link href='../assets/dist/css/bootstrap.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <main class='container mt-4'>
+        <h1>Select Fields</h1>
+
+        <h4 class="text-secondary">Select Field</h4>
+        <div class="mb-3">
+            <label for="humanName" class="form-label fw-bold">What kind of camper do you plan to bring?</label>
+            <select class="form-select">
+                <option selected>Choose...</option>
+                <option value="Trailer">A vintage travel trailer</option>
+                <option value="Class A">A Class-A bus or motorhome</option>
+                <option value="Ten">A self-building tent</option>
+            </select>
+        </div>
+
+        <hr>
+
+        <h4 class="text-secondary">Select Sizes</h4>
+        <div class="mb-3">
+            <label for="humanName" class="form-label fw-bold">What kind of camper do you plan to bring?</label>
+            <select class="form-select form-select-sm">
+                <option selected>Choose...</option>
+                <option value="Trailer">A vintage travel trailer</option>
+                <option value="Class A">A Class-A bus or motorhome</option>
+                <option value="Ten">A self-building tent</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label for="humanName" class="form-label fw-bold">What kind of camper do you plan to bring?</label>
+            <select class="form-select form-select-lg">
+                <option selected>Choose...</option>
+                <option value="Trailer">A vintage travel trailer</option>
+                <option value="Class A">A Class-A bus or motorhome</option>
+                <option value="Ten">A self-building tent</option>
+            </select>
+        </div>
+
+        <hr>
+
+        <h4 class="text-secondary">Disabled</h4>
+        <div class="mb-3">
+            <label for="humanName" class="form-label fw-bold">What kind of camper do you plan to bring?</label>
+            <select class="form-select form-select" disabled>
+                <option selected>Choose...</option>
+                <option value="Trailer">A vintage travel trailer</option>
+                <option value="Class A">A Class-A bus or motorhome</option>
+                <option value="Ten">A self-building tent</option>
+            </select>
+        </div>
+
+        <h4 class="text-secondary">Select Multiple</h4>
+        <div class="mb-3">
+            <label for="humanName" class="form-label fw-bold">What kind of camper do you plan to bring?</label>
+            <select class="form-select" multiple size="2">
+                <option selected>Choose...</option>
+                <option value="Trailer">A vintage travel trailer</option>
+                <option value="Class A">A Class-A bus or motorhome</option>
+                <option value="Ten">A self-building tent</option>
+            </select>
+        </div>
+
+        <hr>
+    </main>
+</body>
+
+</html>

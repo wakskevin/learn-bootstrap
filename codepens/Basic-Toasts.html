@@ -1,0 +1,44 @@
+<!-- https://codepen.io/planetoftheweb/pen/vYgVBGb?editors=1000 -->
+
+<!DOCTYPE html>
+<html lang='en' dir='ltr'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Bootstrap 5 - Basic Toasts</title>
+
+    <!-- Bootstrap CSS -->
+    <link href='../assets/dist/css/bootstrap.min.css' rel='stylesheet'>
+
+    <!-- Bootstrap JS -->
+    <script src='../assets/dist/js/bootstrap.bundle.min.js' defer></script>
+</head>
+
+<body>
+    <main class='container mt-4'>
+        <h1>Basic Toast</h1>
+
+        <button type="button" class="btn btn-danger" id="basicToastBtn">Join us</button>
+
+        <div class="toast-container position-fixed top-0 end-0 p-3">
+            <div id="basicToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header bg-primary text-light">
+                    <h5 class="my-0">Join Our Company</h5>
+                </div>
+                <div class="toast-body">
+                    <strong>Mind Numbing Products</strong> is a force in the manufacturing and production market. Our
+                    motto is If it’s not Mind Numbing, it’s not worth it.
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        document.querySelector("#basicToastBtn").onclick = function () {
+            new bootstrap.Toast(document.querySelector('#basicToast')).show();
+        }
+    </script>
+</body>
+
+</html>

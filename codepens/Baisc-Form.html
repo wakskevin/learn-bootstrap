@@ -1,0 +1,39 @@
+<!-- https://codepen.io/planetoftheweb/pen/gOgQxYW?editors=1000 -->
+
+<!DOCTYPE html>
+<html lang='en' dir='ltr'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Bootstrap 5 Basic Form</title>
+
+    <!-- Bootstrap CSS -->
+    <link href='../assets/dist/css/bootstrap.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <main class='container mt-4'>
+        <h1>Basic Form</h1>
+
+        <form>
+            <div class="mb-3">
+                <label for="humanName" class="form-label fw-bold">Name</label>
+                <input type="name" class="form-control" id="humanName" aria-describedby="nameHelp">
+                <div id="nameHelp" class="form-text">Let us know your name...human</div>
+            </div>
+
+            <div class="mb-3">
+                <label for="whyFun" class="form-label fw-bold">Why is not being a robot fun?</label>
+                <textarea class="form-control" id="whyFun" rows="3"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-secondary">submit</button>
+        </form>
+
+        <hr>
+    </main>
+</body>
+
+</html>

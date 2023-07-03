@@ -1,0 +1,65 @@
+<!-- https://codepen.io/planetoftheweb/pen/xxgyGyy?editors=1010 -->
+
+<!DOCTYPE html>
+<html lang='en' dir='ltr'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Bootstrap 5 - Toast Options</title>
+
+    <!-- Bootstrap CSS -->
+    <link href='../assets/dist/css/bootstrap.min.css' rel='stylesheet'>
+
+    <!-- Bootstrap JS -->
+    <script src='../assets/dist/js/bootstrap.bundle.min.js' defer></script>
+</head>
+
+<body>
+    <main class='container mt-4'>
+        <h1>Toast Options</h1>
+
+        <h4 class="text-secondary">Basic Toast</h4>
+
+        <button type="button" class="btn btn-primary" id="basicToastBtn">Join us</button>
+        <button type="button" class="btn btn-info text-white" id="infoToastBtn">Info</button>
+
+        <div class="toast-container position-fixed top-0 end-0 p-3">
+            <div id="basicToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true"
+                data-bs-autohide="false">
+                <div class="toast-header bg-primary text-light d-flex justify-content-between">
+                    <h5 class="my-0">Join Our Company</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast"
+                        aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                    <strong>Mind Numbing Products</strong> is a force in the manufacturing and production market. Our
+                    motto is If it’s not Mind Numbing, it’s not worth it.
+                </div>
+            </div>
+
+            <div id="infoToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true"
+                data-bs-animation="false" data-bs-delay="2000">
+                <div class="toast-body bg-info text-light d-flex justify-content-between">
+                    <p class="mb-0">As experts in lifting, moving, and nuts-and-bolting, the robotic population is an
+                        ideal match for industry and repetitive tasks.</p>
+                    <button type="button" class="btn-close btn-close-white ms-3" data-bs-dismiss="toast"
+                        aria-label="Close"></button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <script>
+        document.querySelector("#basicToastBtn").onclick = function () {
+            new bootstrap.Toast(document.querySelector('#basicToast')).show();
+        }
+
+        document.querySelector("#infoToastBtn").onclick = function () {
+            new bootstrap.Toast(document.querySelector('#infoToast')).show();
+        }
+    </script>
+</body>
+
+</html>

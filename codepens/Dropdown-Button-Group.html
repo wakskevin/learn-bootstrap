@@ -1,0 +1,41 @@
+<!-- https://codepen.io/planetoftheweb/pen/VwPEEQq?editors=1000 -->
+
+<!DOCTYPE html>
+<html lang='en' dir='ltr'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Bootstrap 5 - Dropdown Button Group</title>
+
+    <!-- Bootstrap CSS -->
+    <link href='../assets/dist/css/bootstrap.min.css' rel='stylesheet'>
+
+    <!-- Bootstrap JS -->
+    <script src='../assets/dist/js/bootstrap.bundle.min.js' defer></script>
+</head>
+
+<body>
+    <main class='container mt-4'>
+        <h1>Dropdown Button Group</h1>
+
+        <div class="btn-group">
+            <button type="button" class="btn btn-success">Action</button>
+            <a class="btn btn-success dropdown-toggle dropdown-toggle-split" type="button" id="dropdownMicroProcessor"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Button Group</span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMicroProcecsor">
+                <li><a class="dropdown-item" href="#">Microcontroller</a></li>
+                <li><a class="dropdown-item" href="#">Embedded Processor</a></li>
+                <li><a class="dropdown-item" href="#">DSP</a></li>
+                <li><a class="dropdown-item" href="#">Media Processor</a></li>
+            </ul>
+        </div>
+
+        <hr>
+    </main>
+</body>
+
+</html>

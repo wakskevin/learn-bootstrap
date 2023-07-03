@@ -1,0 +1,49 @@
+<!-- https://codepen.io/planetoftheweb/pen/OJWoKKY?editors=1000 -->
+
+<!DOCTYPE html>
+<html lang='en' dir='ltr'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Bootstrap 5 - Alerts</title>
+
+    <!-- Bootstrap CSS -->
+    <link href='../assets/dist/css/bootstrap.min.css' rel='stylesheet'>
+
+    <!-- Bootstrap JS -->
+    <script src='../assets/dist/js/bootstrap.bundle.min.js' defer></script>
+</head>
+
+<body>
+    <main class='container mt-4'>
+        <h1>Alerts</h1>
+
+        <h4 class="text-secondary">Simple Alert</h4>
+        <div class="alert alert-primary" role="alert">
+            Thanks for signing up for our Android and Atomaton mailing list! You’re all set.
+        </div>
+
+        <hr>
+
+        <h4 class="text-secondary">Alert with heading and link</h4>
+        <div class="alert alert-danger" role="alert">
+            <h4 class="alert-heading">Whoa!</h4>
+            <p>That’s one crazy password you have there. But it’s not secure enough. <a href="#"
+                    class="alert-link">Create a new one</a> to save the world from chaos.</p>
+        </div>
+
+        <hr>
+
+        <h4 class="text-secondary">Dismissible alert</h4>
+
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            Remember to <strong>bookmark this page</strong> and check back regularly for new contraptions and
+            apparatuses for your personal reboot
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    </main>
+</body>
+
+</html>

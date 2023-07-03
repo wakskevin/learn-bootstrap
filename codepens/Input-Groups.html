@@ -1,0 +1,52 @@
+<!-- https://codepen.io/planetoftheweb/pen/qBRQYQR?editors=1000 -->
+
+<!DOCTYPE html>
+<html lang='en' dir='ltr'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Bootstrap 5 - Input Groups</title>
+
+    <!-- Bootstrap CSS -->
+    <link href='../assets/dist/css/bootstrap.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <main class='container mt-4'>
+        <h1>Input Groups</h1>
+
+        <h4 class="text-secondary">Input Groups</h4>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text bg-success text-white" id="basic-addon1">Camper Type</span>
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                aria-describedby="basic-addon1">
+        </div>
+
+        <hr>
+
+        <h4 class="text-secondary">Input Group Small</h4>
+
+        <div class="input-group input-group-sm mb-3">
+            <div class="input-group-text">
+                <input class="form-check-input mt-0" type="checkbox" value=""
+                    aria-label="Checkbox for following text input">
+            </div>
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                aria-describedby="basic-addon1">
+        </div>
+
+        <hr>
+
+        <h4 class="text-secondary">Input Group Large</h4>
+        <div class="input-group input-group-lg mb-3">
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                aria-describedby="basic-addon1">
+            <button class="btn btn-primary" type="button" id="button-addon2">Button</button>
+        </div>
+    </main>
+</body>
+
+</html>

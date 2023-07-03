@@ -1,0 +1,72 @@
+<!-- https://codepen.io/planetoftheweb/pen/bGgmMRQ?editors=1000 -->
+
+<!DOCTYPE html>
+<html lang='en' dir='ltr'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Bootstrap 5 - Collapse</title>
+
+    <!-- Bootstrap CSS -->
+    <link href='../assets/dist/css/bootstrap.min.css' rel='stylesheet'>
+
+    <!-- Bootstrap JS -->
+    <script src='../assets/dist/js/bootstrap.bundle.min.js' defer></script>
+</head>
+
+<body>
+    <main class='container mt-4'>
+        <h1>Collapse</h1>
+
+        <h4 class="text-secondary">Single Collapse</h4>
+        <div class="d-flex">
+            <div>
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#productsExample" role="button"
+                    aria-expanded="false" aria-controls="productsExample">
+                    href</a>
+            </div>
+            <div class="ms-3">
+                <button class="btn btn-info text-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#expertsExample" aria-expanded="false" aria-controls="expertsExample">
+                    data-bs-target
+                </button>
+            </div>
+        </div>
+
+        <hr>
+
+        <h4 class="text-secondary">Multiple Collapse</h4>
+        <div class="d-flex">
+            <div>
+                <a class="btn btn-primary" data-bs-toggle="collapse" href=".multi-collapse" role="button"
+                    aria-expanded="false" aria-controls="productsExample">
+                    href</a>
+            </div>
+            <div class="ms-3">
+                <button class="btn btn-info text-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target=".multi-collapse" aria-expanded="false"
+                    aria-controls="expertsExample productsExample">
+                    data-bs-target
+                </button>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="collapse multi-collapse" id="productsExample">
+            <strong>Mind Numbing Products</strong> is a force in the manufacturing and production market. Our motto is
+            If it’s not Mind Numbing, it’s not worth it.
+        </div>
+
+        <div class="collapse multi-collapse" id="expertsExample">
+            As experts in lifting, moving, and nuts-and-bolting, the robotic population is an ideal match for industry
+            and repetitive tasks.
+        </div>
+
+        <hr>
+    </main>
+</body>
+
+</html>

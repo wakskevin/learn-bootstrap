@@ -1,0 +1,50 @@
+<!-- https://codepen.io/planetoftheweb/pen/GRrYwbE?editors=1000 -->
+
+<!DOCTYPE html>
+<html lang='en' dir='ltr'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Bootstrap 5 Dropdowm Content</title>
+
+    <!-- Bootstrap CSS -->
+    <link href='../assets/dist/css/bootstrap.min.css' rel='stylesheet'>
+
+    <!-- Bootstrap JS -->
+    <script src='../assets/dist/js/bootstrap.bundle.min.js' defer></script>
+</head>
+
+<body>
+    <main class='container mt-4'>
+        <h1>Dropdown Content</h1>
+
+        <span class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMicroProcessorTrigger"
+                data-bs-toggle="dropdown" aria-expanded="false">Dropdown Content</button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMicroProcessorTrigger">
+                <li>
+                    <div class="dropdown-header">Dropdown header</div>
+                </li>
+                <li><a class="dropdown-item" href="#">Microcontroller</a></li>
+                <li><a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">Embedded Processor</a>
+                </li>
+                <li>
+                    <div class="dropdown-item-text p-4 text-muted">
+                        Robots have embraced working with micro-processors
+                    </div>
+                </li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">DSP</a></li>
+                <li><a class="dropdown-item active" href="#" aria-current="true">Media Processor</a></li>
+            </ul>
+        </span>
+
+        <hr>
+    </main>
+</body>
+
+</html>
