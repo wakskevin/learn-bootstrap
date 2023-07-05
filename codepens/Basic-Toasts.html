@@ -10,10 +10,7 @@
     <title>Bootstrap 5 - Basic Toasts</title>
 
     <!-- Bootstrap CSS -->
-    <link href='../assets/dist/css/bootstrap.min.css' rel='stylesheet'>
-
-    <!-- Bootstrap JS -->
-    <script src='../assets/dist/js/bootstrap.bundle.min.js' defer></script>
+    <link href='assets/dist/css/bootstrap.min.css' rel='stylesheet'>
 </head>
 
 <body>
@@ -34,6 +31,10 @@
             </div>
         </div>
     </main>
+
+    <!-- Bootstrap JS -->
+    <script src='assets/dist/js/bootstrap.bundle.min.js'></script>
+    
     <script>
         document.querySelector("#basicToastBtn").onclick = function () {
             new bootstrap.Toast(document.querySelector('#basicToast')).show();
