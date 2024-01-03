@@ -1,62 +1,53 @@
 <!-- https://codepen.io/planetoftheweb/pen/GRrwGZY?editors=1010 -->
-
 <!DOCTYPE html>
-<html lang='en' dir='ltr'>
-
-<head>
-    <meta charset='UTF-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title>Bootstrap 5 - Validation</title>
-
-    <!-- Bootstrap CSS -->
-    <link href='assets/dist/css/bootstrap.min.css' rel='stylesheet'>
-</head>
-
-<body>
-    <main class='container mt-4'>
-        <h1>Validation</h1>
-
-        <form class="needs-validation" novalidate>
-            <div class="mb-3">
-                <label for="humanName" class="form-label fw-bold">Name</label>
-                <input type="name" required class="form-control" id="humanName" aria-describedby="nameHelp">
-                <div id="nameHelp" class="form-text">Let us know your name...human</div>
-                <div class="valid-feedback">
-                    Acceptable name
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset='UTF-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <title>Bootstrap 5 - Validation</title>
+        <!-- Bootstrap CSS -->
+        <link href='assets/dist/css/bootstrap.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <main class="container mt-4">
+            <h1>Validation</h1>
+            <form class="needs-validation" novalidate>
+                <div class="mb-3">
+                    <label for="humanName" class="form-label fw-bold">Name</label>
+                    <input type="name"
+                           required
+                           class="form-control"
+                           id="humanName"
+                           aria-describedby="nameHelp">
+                    <div id="nameHelp" class="form-text">Let us know your name...human</div>
+                    <div class="valid-feedback">Acceptable name</div>
+                    <div class="invalid-feedback">Sorry Terran, not a valid username</div>
                 </div>
-                <div class="invalid-feedback">
-                    Sorry Terran, not a valid username
-                </div>
-            </div>
-            <button type="submit" class="btn btn-secondary">submit</button>
-        </form>
+                <button type="submit" class="btn btn-secondary">submit</button>
+            </form>
+            <hr>
+        </main>
+        <script>
+            (function () {
+                'use strict'
 
-        <hr>
-    </main>
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.querySelectorAll('.needs-validation')
 
-    
-    <script>
-        (function () {
-            'use strict'
+                // Loop over them and prevent submission
+                Array.prototype.slice.call(forms)
+                    .forEach(function (form) {
+                        form.addEventListener('submit', function (event) {
+                            if (!form.checkValidity()) {
+                                event.preventDefault()
+                                event.stopPropagation()
+                            }
 
-            // Fetch all the forms we want to apply custom Bootstrap validation styles to
-            var forms = document.querySelectorAll('.needs-validation')
-
-            // Loop over them and prevent submission
-            Array.prototype.slice.call(forms)
-                .forEach(function (form) {
-                    form.addEventListener('submit', function (event) {
-                        if (!form.checkValidity()) {
-                            event.preventDefault()
-                            event.stopPropagation()
-                        }
-
-                        form.classList.add('was-validated')
-                    }, false)
-                })
-        })()
-    </script>
-</body>
-
+                            form.classList.add('was-validated')
+                        }, false)
+                    })
+            })()
+        </script>
+    </body>
 </html>
