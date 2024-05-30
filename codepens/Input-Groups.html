@@ -10,7 +10,7 @@
     <title>Bootstrap 5 - Input Groups</title>
 
     <!-- Bootstrap CSS -->
-    <link href='assets/dist/css/bootstrap.min.css' rel='stylesheet'>
+    <link href='../node_modules/bootstrap/dist/css/bootstrap.min.css' rel='stylesheet'>
 </head>
 
 <body>
@@ -42,9 +42,12 @@
 
         <h4 class="text-secondary">Input Group Large</h4>
         <div class="input-group input-group-lg mb-3">
-            <input type="text" class="form-control" placeholder="Username" aria-label="Username"
-                aria-describedby="basic-addon1">
-            <button class="btn btn-primary" type="button" id="button-addon2">Button</button>
+            <div class="form-floating">
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                    aria-describedby="basic-addon1" id="username">
+                <label for="username">Username</label>
+            </div>
+            <button class="btn btn-primary" type="submit" id="button-addon2">Submit</button>
         </div>
     </main>
 </body>

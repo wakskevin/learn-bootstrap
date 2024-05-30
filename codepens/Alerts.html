@@ -10,7 +10,10 @@
     <title>Bootstrap 5 - Alerts</title>
 
     <!-- Bootstrap CSS -->
-    <link href='assets/dist/css/bootstrap.min.css' rel='stylesheet'>
+    <link href='../node_modules/bootstrap/dist/css/bootstrap.min.css' rel='stylesheet'>
+
+    <!-- Bootstrap JS -->
+    <script src='../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js' defer></script>
 </head>
 
 <body>
@@ -19,7 +22,7 @@
 
         <h4 class="text-secondary">Simple Alert</h4>
         <div class="alert alert-primary" role="alert">
-            Thanks for signing up for our Android and Atomaton mailing list! You’re all set.
+            Thanks for signing up for our Android and Atomaton mailing list! You're all set.
         </div>
 
         <hr>
@@ -27,7 +30,7 @@
         <h4 class="text-secondary">Alert with heading and link</h4>
         <div class="alert alert-danger" role="alert">
             <h4 class="alert-heading">Whoa!</h4>
-            <p>That’s one crazy password you have there. But it’s not secure enough. <a href="#"
+            <p>That's one crazy password you have there. But it's not secure enough. <a href="#"
                     class="alert-link">Create a new one</a> to save the world from chaos.</p>
         </div>
 
@@ -41,9 +44,6 @@
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
     </main>
-
-    <!-- Bootstrap JS -->
-    <script src='assets/dist/js/bootstrap.bundle.min.js'></script>
 </body>
 
 </html>
